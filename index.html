@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+        body{
+    background-color: #3117d8;
+    }
+    #main{
+        width: 95%;
+    }
+
+  #header{
+    border: 0px solid red;
+    width: 85%;
+    height: 45px;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #3117d8;
+}
+.header_child{
+    border: 0px solid rgb(228, 224, 224);
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_text{
+    border: 0px solid red;
+    color: white;
+    font-size: 17px;
+    padding-top: 5px;
+}
+#input-block{
+    border: 0px solid red;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#input-block-main-child{
+border: 0px solid black;
+display: flex;
+justify-content: space-between;
+}
+
+.input-block-child{
+    border: 0px solid blue;
+    height: auto;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.input-block-child > div{
+    border: 0px solid rgb(0, 255, 81);
+    padding-left: 15px;
+}
+
+
+#input-block-main-child2{
+    border: 0px solid red;
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+  justify-content: space-evenly;  
+}
+
+#input-block-main-child2 > button{
+    background-color: #3117d8;
+    width: 175px;
+    color: white;
+    border-radius: 5px;
+}
+
+#input-block-main-child2 > input{
+    width: 250px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: #e5e4ed;
+}
+
+#input-block-main-child3{
+    border: 0px solid black;
+    display: flex;
+    margin-top: 25px;
+}
+#input-block-main-child3 > div{
+    border: 0px solid brown;
+    border-radius: 5px;
+    background-color: #dedede;
+    margin-left: 15px;
+}
+
+#img-block{
+    border: 0px solid red;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+}
+.img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+#offers{
+    border: 0px solid red;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.offer-img{
+    border: 0px solid rgb(0, 255, 94);
+    color: white;
+    font-size: 17px;
+    padding-top: 5px;
+    padding: 10px;
+}
+h1{
+    margin-left: 60px;
+    color: white;
+}
+.img2{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="header_child"> <img alt="logo" src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/skyplus6e/in/en/assets/homepage/images/logo/icIndigoLogoWhiteR-new.svg"></div>
+            <div class="header_child">
+                <div class="header_text">Book</div>
+                <div class="header_text">Check-in</div>
+                <div class="header_text">Manage</div>
+                <div class="header_text">6E Rewards</div>
+                <div class="header_text">Info</div>
+                <div class="header_text">Login</div>
+            </div>
+        </div>
+        <div id="input-block">
+            <div id="input-block-main-child">
+                <div class="input-block-child">
+                    <div><b>One Way</b></div>
+                    <div><b><span><img style=" height: 13px;" src="data:image/png;base64,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"></span>
+                        1 pax</b></div>
+                    <div><b style="color: #027bff;">Use promo code</b></div>
+                    </div>
+                <div class="input-block-child"><b>Indian Rupee</b></div>
+            </div>
+            <div id="input-block-main-child2">
+                <input placeholder="From">
+                <input placeholder="To">
+                <input placeholder="Date">
+                <button><b>Search Flight</b></button>
+            </div>
+            <div id="input-block-main-child3">
+                <div>Armed Forces</div>
+                <div>Doctors & Nurses</div>
+                <div>Family & Friends</div>
+                <div>Unaccompanied Minor</div>
+            </div>
+        </div>
+
+        <div id="img-block">
+            <img class="img" alt="image" src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/skyplus6e/in/en/assets/homepage/images/HP_1.png">
+        </div>
+
+        <h1>Get Inspired</h1>
+
+        <div id="offers">
+            <div class="offer-img"> <img class="img2" alt="offer-image" src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/indigov2/6e-website/destinations/get-inspired/Get-Inspired-eat.jpg"></div>
+            <div class="offer-img"> <img class="img2" alt="offer-image" src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/indigov2/6e-website/destinations/get-inspired/fratelli/Sula-Get-inspired-banner.jpg"></div>
+            <div class="offer-img"> <img class="img2" alt="offer-image" src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/skyplus6e/in/en/assets/homepage/images/BC-logo1.jpg"></div>
+            <div class="offer-img"> <img class="img2" alt="offer-image" src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/skyplus6e/in/en/assets/homepage/images/Travel-wanderlust-new.jpg"></div>
+        </div>
+
+        <h1>IndiGo News</h1>
+        <div id="offers">
+            <div class="offer-img"> <img class="img2" alt="offer-image" src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/goindigo/investor-relations/press-releases/image/indigo-adds-gondia-as-its-85th-domestic-destination-mweb.jpg"></div>
+            <div class="offer-img"> <img class="img2" alt="offer-image" src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/goindigo/investor-relations/press-releases/image/operations-from-diu-to-ahmedabad-and-surat-mweb.jpg"></div>
+            <div class="offer-img"> <img class="img2" alt="offer-image" src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/goindigo/investor-relations/press-releases/image/indigo-commences-operations-from-salem-mweb.jpg"></div>
+            <div class="offer-img"> <img class="img2" alt="offer-image" src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/goindigo/investor-relations/press-releases/image/indigoreach-organized-special-eye-camps-mweb.jpg"></div>
+        </div>
+    </div>
+        
+       
+</body>
+</html>
+
+                
